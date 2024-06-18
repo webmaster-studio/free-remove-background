@@ -1,6 +1,5 @@
 import "@/styles/globals.css"
 import { Metadata, type Viewport } from "next"
-// import { GoogleAnalytics } from "@next/third-parties/google"
 import Script from "next/script"
 
 import { siteConfig } from "@/config/site"
@@ -80,7 +79,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <TailwindIndicator />
           </ThemeProvider>
         </body>
-        <!--<GoogleAnalytics gaId="G-20G8R0K6W9" />-->
       </html>
     </>
   )
