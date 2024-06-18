@@ -1,6 +1,7 @@
 import "@/styles/globals.css"
 import { Metadata, type Viewport } from "next"
 // import { GoogleAnalytics } from "@next/third-parties/google"
+import Script from "next/script"
 
 import { siteConfig } from "@/config/site"
 import { fontMuseo, fontSans } from "@/lib/fonts"
@@ -58,7 +59,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <>
       <html lang="en" suppressHydrationWarning>
-        <head />
+        <head>
+          <Script strategy="afterInteractive" data-domain="bgremov.ing" src="https://click.pageview.click/js/script.js" />
+        </head>
         <body
           className={cn(
             "min-h-screen bg-background font-sans antialiased",
